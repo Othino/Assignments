@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>Login and Registration Page</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+      </div>
+      <div class="social-icons">
+        <img src="email.jpg">
+        <img src="fb.jpg">
+        <img src="phone.png">
+      </div>
+      <form id="login" class="input-group">
+         <input type="email" class="input-field" placeholder="Email :" required>
+         <input type="password" class="input-field" placeholder="Password :" required>
+         <input type="checkbox" class="check-box"><span>Remember Password</span>
+         <button type="submit" class="submit-btn">Log In</button>
+      </form>
+      <form id="register" class="input-group">
+         <input type="text" class="input-field" placeholder="First Name :" required>
+         <input type="text" class="input-field" placeholder="Last Name :" required>
+         <input type="tel" class="input-field" placeholder="Phone Number :" required>
+         <label for="gender"></label>
+          <select name="gender">
+            <option value="male">Gender</option>
+	          <option value="male">Male</option>
+	          <option value="female">Female</option>
+          </select>
+         <input type="date" class="input-field" placeholder="Date of birth :" required>
+         <input type="color" name="favcolor" value="#FFFFF">
+        
+         <input type="password" placeholder="Enter Password" required>
+         <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+
+      function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+    </div>
+  </div>
+</body>
+</html>
